@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfekte Party</title>
+    <link rel="stylesheet" href="basic_style.css">
+    <link rel="stylesheet" href="party_style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Perfekte Party</h1>
+        </div>
+        <div id="menu1">
+            <a href="index.html">Home</a>
+            <a href="party.html">Party</a>
+        </div>
+        <div id="menu2">
+            <details>
+                <summary>|||</summary>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="party.html">Party</a>
+                </div>
+            </details>
+        </div>
+    </header>
+    <div class="content">
+        <div id="board">
+            <div style="display: flex;">
+                <h3 onclick="navigation2();">DJBoard</h3>
+                <h3 onclick="navigation1();">Playlist</h3>
+            </div>
+            <div id="playlists" class="double_player">
+                <div id="songs">
+                    <p style="color: rgb(0, 0, 30); margin-bottom: 1vh;">Bitte wähle einen Song aus.</p>
+                    <select id="song">
+                        <option value="Songauswahl">Songauswahl</option>
+                        <option value="Submarine">Submarine</option>
+                        <option value="Rainbow">Rainbow</option>
+                    </select>
+                </div>
+                <div id="playlist1"></div>
+                <div id="beats">
+                    <p style="color: rgb(0, 0, 30); margin-bottom: 1vh;">Bitte wähle einen Beat aus.</p>
+                    <select id="beat">
+                        <option value="Beatauswahl">Beatauswahl</option>
+                        <option value="Boom">Boom</option>
+                        <option value="Run">Run</option>
+                    </select>
+                </div>
+                <div id="playlist2"></div>
+                <div class="audio" style="border-radius: 5vh; border: hidden;">
+                    <div class="player_box" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                        <button class="start_stop" id="main_start_stop" style="width: 28vh;">Starten</button>
+                        <input type="range" id="main_controller" max="100" step="0.1" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%; height: 55vh;  display: flex; justify-content: start; align-items: center; overflow-y: scroll; flex-direction: column; overflow-x: hidden;" id="playlists3">
+            <div id="playlists2"></div>
+            </div>
+            <div class="effect_box" id="effect_box">
+                <p>Soundeffekte</p>
+                <div class="row">
+                    <button onclick="play_sound('Yaaay!.mp3');" class="flash_button">A</button>
+                    <button onclick="play_sound('Countdown.mp3');" class="flash_button">B</button>
+                    <button onclick="play_sound('Aaa.mp3');" class="flash_button">C</button>
+                    <button onclick="play_sound('Police.mp3');" class="flash_button">D</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Volumen</p>
+        <input class="volume_slider" type="range" id="volume_slider" min="0" max="1" step="0.1" value="0.5">
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

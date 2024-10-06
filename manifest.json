@@ -1,0 +1,10 @@
+{
+    "name": "Perfekte Party",
+    "short_name": "Perfekte Party",
+    "theme_color": "#00ffff",
+    "background_color": "#00001e",
+    "display": "fullScreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/index.html"
+}
