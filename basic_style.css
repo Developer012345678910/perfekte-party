@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    font-size: 3vh;
+    font-weight: 100;
+    color: aqua;
+}
+
+body {
+    background-color: rgb(0, 0, 30);
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0vh;
+    background-color: rgb(0, 0, 30);
+}
+
+header a {
+    margin-right: 3vh;
+    color: aqua;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: darkcyan;
+}
+
+h1 {
+    font-size: 5vh;
+    margin-left: 1vh;
+    color: rgb(255, 0, 255);
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cover {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.content {
+    background-image: url(cover.png);
+    background-size: cover;
+    min-height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+p {
+    text-align: center;
+    max-width: 80vw;
+}
+
+.link_button {
+    width: 30vw;
+    height: 7vh;
+    text-align: center;
+    color: aqua;
+    background-color: rgb(0, 0, 30);
+    border-style: hidden;
+    border-radius: 10vh;
+}
+
+.link_button:hover {
+    width: 35vw;
+    cursor: pointer;
+    color: darkcyan;
+    background-color: rgb(0, 0, 100);
+}
+
+#menu2 {
+    display: none;
+}
+
+details div {
+    width: 40vw;
+    height: 1000vh;
+    position: fixed;
+    top: 10vh;
+    right: 0vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: rgb(0, 0, 30);
+    flex-direction: column;
+    border-left: 2px solid aqua;
+    border-top: 2px solid aqua;
+}
+
+details div a {
+    display: block;
+    padding-left: 2.5vh;
+    height: 5vh;
+    width: 100%;
+}
+
+details div a:hover {
+    border-bottom: solid 2px aqua;
+    border-top: solid 2px aqua;
+    color: aqua;
+}
+
+details summary {
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vh;
+    list-style: none;
+    border-left: 2px solid aqua;
+}
+
+@media (max-width: 500px) {
+    #menu1 {
+        display: none;
+    }
+
+    #menu2 {
+        display: block;
+    }
+
+    h1 {
+        font-size: 4vh;
+    }
+}
+
